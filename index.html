@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce Product Page</title>
+</head>
+<body>
+    <div class="black-overlay"></div>
+    <div class="container">
+               
+        <!-- Navbar -->
+        <div class="navbar">
+            <img class="menu" src="images/icon-menu.svg" alt="">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a> 
+            <div class="navbar-nav">
+                <a href="" class="nav-link nav-close"><svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#68707d" fill-rule="evenodd"/></svg></a>
+                <a class="nav-link" href="#">Collections</a>
+                <a class="nav-link" href="#">Men</a>
+                <a class="nav-link" href="#">Women</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+            <button id="shopping-card">
+                <div id="shopping-card-badge"></div>
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#68707d" fill-rule="nonzero"/></svg>  
+            </button>
+            <img id="image-avatar" src="images/image-avatar.png" alt="">
+        </div>
+
+        <!-- Card -->
+        <div class="card-section">
+            <div class="cards empty-card">
+                <h6 class="">Cart</h6>  
+                <div class="product-cart">
+                    <p class="">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Main-gallery -->
+            <div class="main-gallery">
+                <div class="main-images">
+                    <a href=""><img class="product-image show"  src="images/image-product-1.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-2.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-3.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-4.jpg" alt=""></a>
+                </div>
+                <div class="thumbnail">
+                    <a href=""><img class="product-image active" src="images/image-product-1-thumbnail.jpg" alt=""></a>
+                    <a href=""><img class="product-image" src="images/image-product-2-thumbnail.jpg" alt=""></a>                
+                    <a href=""><img class="product-image" src="images/image-product-3-thumbnail.jpg" alt=""></a>                                      
+                    <a href=""><img class="product-image" src="images/image-product-4-thumbnail.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Text-content -->
+            <div class="text-content">                
+                <h6>SNEAKER COMPANY</h6>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>these low-profile sneakers are your perfect casual wear companion. Featuring a durrable rubber outer sole, they'll withstand everything the weather can offer</p>
+                <div class=price>
+                    <h3>$125.00 <span id="badge-discount">50%</span></h3>
+                    <p id="old-price">$250.00</p>
+                </div> 
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" id="minus"> <img src="images/icon-minus.svg" alt=""></button>
+                        <button type="button" id="total">0</button>
+                        <button type="button" id="plus"><img src="images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <button id="btn-add-to-card">
+                        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#FFF" fill-rule="nonzero"/></svg><h5>Add to card</h5>
+                    </button>
+                </div>             
+            </div>
+
+            <!-- Lightbox-gallery -->
+            <div class="lightbox-gallery">
+                <div class="arrow-buttons">
+                    <button class="previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></button> 
+                    <button class="next"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></button>
+                    <button class="close"><img src="images/icon-close.svg" alt="" ></button>
+                </div>
+                <div class="main-images">
+                    <a href=""><img class="product-image show"  src="images/image-product-1.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-2.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-3.jpg" alt=""></a>
+                    <a href=""><img class="product-image"  src="images/image-product-4.jpg" alt=""></a>
+                </div>
+                <div class="thumbnail">
+                    <a href=""><img class="product-image active" src="images/image-product-1-thumbnail.jpg" alt=""></a>
+                    <a href=""><img class="product-image" src="images/image-product-2-thumbnail.jpg" alt=""></a>                
+                    <a href=""><img class="product-image" src="images/image-product-3-thumbnail.jpg" alt=""></a>                                      
+                    <a href=""><img class="product-image" src="images/image-product-4-thumbnail.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
