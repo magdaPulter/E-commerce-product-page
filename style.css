@@ -14,10 +14,6 @@ body{
     font-family: Kumbh Sans;
 }
 
-.container{
-    margin: 0 120px;
-}
-
 /* Navbar */
 .navbar{
     display: flex;
@@ -25,6 +21,7 @@ body{
     border-bottom: var(--grayish-blue) solid 1px;
     padding: 20px 0 30px 0;
     position: relative;
+    margin: 0 120px;
 }
 
 .navbar a{
@@ -352,12 +349,13 @@ button.next{
 }
 
 
-@media(max-width: 834px){
+@media(max-width: 768px){
     .main-content{
         flex-direction: column;
     }
 
     .navbar{
+        margin: 0px;
         width: 100%;
         position: absolute;
         top: 0;

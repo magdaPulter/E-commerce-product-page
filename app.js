@@ -96,9 +96,9 @@ shoppingCard.addEventListener('click', () => {
 })
 
 const  btnAddToCard = document.querySelector('#btn-add-to-card')
-btnAddToCard.addEventListener('click', changeNumberQty)
+btnAddToCard.addEventListener('click', changeItemsQty)
 
-function changeNumberQty() {
+function changeItemsQty() {
     let sum = 0
     const plus = document.querySelector('#plus'),
         minus = document.querySelector('#minus'),
@@ -176,7 +176,7 @@ function changeNumberQty() {
     }
 }
 
-changeNumberQty()
+changeItemsQty()
 
 // Mobile design menu
 const menu = document.querySelector('.menu')
